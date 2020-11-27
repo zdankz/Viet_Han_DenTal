@@ -31,6 +31,6 @@ Admin(Website)
 		. Sau khi chọn lụa các gói trị liệu phù hợp -> hiện tổng giá tiền -> tổng thời gian để thực hiện các gói trị liệu (ví dụ có  3 gói trị liệu( A B C) thì sẽ có 6 phương án cho khách - > A, B, C, AB, BC, AC, mỗi cái sẽ có giá tiền khác nhau (Dùng Javascript bắt event và PhP để fetch_data từ csdl với các gói trị liệu người dùng yêu cầu))
 
 ===============================CSDL TEST===================================
-bỏ cái project colne về vo htdocs của Xampp 
+bỏ cái project clone về cho hẵn vô htdocs của Xampp 
 
 tên databse : nhakhoa -> import file .sql vào 
