@@ -1,0 +1,129 @@
+body{
+font-family: Arial, Tahoma;
+font-size: 12px;
+}
+@media screen and (max-width: 2000px) {
+Định dạng của các khối khi màn hình có chiều rộng nhỏ hơn 2000px;
+}
+@media screen and (max-width: 480px) {
+Định dạng của các khối khi màn hình có chiều rộng nhỏ hơn 480px;
+}
+
+#main{
+	width: : 800px;
+	padding: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#head{
+	height: 100px;
+	background-color: #F5F5F5;
+	border: 1px solid #dc6868;
+	margin-bottom:5px;
+}
+
+#head-link{
+	height: 30px;
+	line-height: 30px;
+	padding-left: 10px;
+	text-align: right;
+	padding-right: 10px;
+	border: 1px solid #0c0c0c;
+	background-color: #F5F5F5;
+	margin-bottom:5px;
+	clear: both;
+}
+
+/*#left{
+	width: 300px;
+	min-height: 400px;
+	border: 1px solid #041503;
+	float:left;
+	background-color: #b7e8db;
+	margin-bottom: 5px;
+	}*/
+
+#content{
+	width: 1350px;
+	min-height: 500px;
+	background-color: #F5F5F5;
+	border: 1px solid #dc6868;
+	margin-bottom:5px;
+	position: relative;
+}
+
+
+.box {
+	display: none;
+}
+
+
+
+/*#content{
+	width : 400px;
+	min-height: 400px;
+	border: 1px solid #1b1a1a;
+	float:left;
+	margin-left: 5px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+	background-color: #F5F5F5;
+}*/
+/*#right{
+	width: 234px;
+	min-height: 400px;
+	border: 1px solid #CDCDCD;
+	float:right;
+	margin-bottom: 5px;
+}*/
+
+
+/*
+
+phan gỏm dang ki=================================================
+*/
+.thongtin {
+	display: none;
+}
+
+#formdangky{
+	max-width: 1400px;
+	margin: 20px;
+	border: 1px solid #dc6868;
+	min-height: 600px;
+}
+#thongtinnguoidangky{
+	float: left;
+	background-color: #b7e8db;
+	border: 1px solid #041503;
+	width: 300px;
+	padding-left: 10px;
+	min-height: 280px;
+	padding-top: 10px;
+	margin-left: 10px;
+}
+
+#thongtin vande{
+	
+}
+
+.theten{
+	font-weight: bold; 
+	margin-top: 15px;
+}
+
+.inputthongtin{
+	font-style: italic;
+	width: 280px;
+	height: 30px;
+}
+.AAAA{
+	display: none;
+}
+.BBBB{
+	display: none;
+}
+.CCCC{
+	display: none;
+}
