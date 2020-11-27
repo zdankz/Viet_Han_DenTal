@@ -15,7 +15,7 @@ Admin(Website)
 		.Thông tin nhân viên
 	+ Form Đăng kí khám
 		. Điền thông tin cá nhân( chưa bắt sự kiện rỗng)
-		. Danh sách sách vấn đê yêu cầu phải chọn ,hiện được danh sách bác sĩ thuộc bộ phận vấn đề mà người đăng kí gặp phải	(chưa xuất được dữ liệu của bác sĩ trong csdl)(ĐANG LÀM)
+		. Danh sách sách vấn đê yêu cầu phải chọn ,hiện được danh sách bác sĩ thuộc bộ phận vấn đề mà người đăng kí gặp phải	(chưa xuất được dữ liệu của bác sĩ trong csdl)(Đ ANG LÀM)
 -File xử lý dữ liệu
 	+ Role
 	+ AdapterNhanVien() -> xuất thông tin nhân viên

@@ -21,13 +21,13 @@
                     <div class="form-group">
                         <input type="password" name="password" class="form-control form-control-lg" placeholder="Password" required>                        
                     </div>
-                    <div class="form-group lead">
+                    <!-- <div class="form-group lead">
                         <label for="userType">I'm a :</label>
                         <input type="radio" name="userType" value="member" class="custom-radio" required>&nbsp;MemberShip  |
                         <input type="radio" name="userType" value="doctor" class="custom-radio" required>&nbsp;
                         Doctor  |
                         <input type="radio" name="userType" value="admin" class="custom-radio" required>&nbsp;Admin  
-                    </div>
+                    </div> -->
                     <div class="form-group">
                         <input type="submit" name="login" class="btn btn-danger btn-block">
                     </div>
@@ -56,6 +56,7 @@ class Login{
         echo $ten ." - ". $hanhdong;
         
     }
+    //
 
 }
 ?>

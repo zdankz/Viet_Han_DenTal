@@ -4,21 +4,33 @@
 	include('../model/ketnoimysql.php');
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-	$role = $_POST['userType'];
+	// $role = $_POST['userType'];
 
-	$_SESSION['userType'] = $_POST['userType'];
-	echo $username ;
-	echo $password ;
-	echo $role ;
+	// $_SESSION['userType'] = $_POST['userType'];
+	// echo $username ;
+	// echo $password ;
+	// echo $role ;
 	$connect = mysqli_connect("localhost", "root", "", "nhakhoa");
 	//$query = "SELECT * FROM users";
 
-	$query = "SELECT username, password, user_type FROM users WHERE user_type = '$role' and username = '$username' and password = '$password' ";
-	$result = mysqli_query($connect, $query);
+	$query = "SELECT username, password, user_type FROM users WHERE  username = '$username' and password = '$password' ";
+	$data = mysqli_query($connect, $query);
+	$arraydata = array();
+
+	while ($row = mysqli_fetch_assoc($data)) {
+		# code...
+		array_push($arraydata, new Lists($row['username'], $row['password'],$row['user_type']));
+
+	}
+	//print_r($arraydata);
+
+	// echo $arraydata[0]->user_type;
+	$_SESSION['userType'] = $arraydata[0]->user_type;
+	 echo $_SESSION['userType'];
 
 	
-	if((mysqli_num_rows($result) == 1)) {
-		header("Location: http://localhost/new/view/".$role.".php");
+	if((mysqli_num_rows($data) == 1)) {
+		header("Location: http://localhost/new/view/".$_SESSION['userType'].".php");
 		echo "1";
 		die();
 	}else{
@@ -29,7 +41,17 @@
 		
 
 
-	
+	class Lists
+	{
+		function __construct( $username, $password,$user_type)
+		{
+			
+
+			$this->username = $username;
+			$this->password = $password;
+			$this->user_type = $user_type;
+			
+	}}
 
 
 
