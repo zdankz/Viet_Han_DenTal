@@ -1,0 +1,116 @@
+body{
+font-family: Arial, Tahoma;
+font-size: 12px;
+}
+
+.main{
+width: 500px;
+padding: 0;
+margin-left: auto; 
+margin-right: auto;
+}
+.content_code{
+	height: 900px;
+	background-color: #F5F5F5;
+	border: 1px solid #CDCDCD;
+	margin-bottom:5px;
+}
+.thongtinnguoidangky{
+	background-color: : #b158c1;
+	width: 200px;
+	margin-left: auto; 
+	margin-right: auto;
+
+}
+.inputthongtin{
+	width: 200px;
+	height: 20px;
+	padding-left: 5px;
+	font-style: italic;
+}
+.theten{
+	font-weight: bold;
+
+}
+
+.Van_De_Gap_Phai{
+	background-color: : #b158c1;
+	width: 200px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+.dvbs{
+	background-color: : #b158c1;
+	width: 450px;
+	margin-left: auto; 
+	margin-top: 20px;
+	margin-right: auto;
+}
+
+.tinhtoan{
+	background-color: : #b158c1;
+	width: 200px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+.Tieu_De_Div{
+	font-weight: bold;
+	font-style: italic;
+}
+
+/*.TBDOCTOR{	
+	width: 100%;
+	border:0px solid black;
+	border-collapse: collapse;
+	margin-left: auto; 
+	margin-right: auto;
+}*/
+
+.DOCTOR{
+	width: 400px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+#AAAA{
+	margin-top: 10px;
+	display: none;
+	margin-left: auto; 
+	margin-right: auto;
+}
+#BBBB{
+	display: none;
+	margin-top: 10px;
+	display: none;
+	margin-left: auto; 
+	margin-right: auto;
+}
+#CCCC{
+	display: none;
+	margin-top: 10px;
+	display: none;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.theinput {
+	margin-top: 5px;
+
+}
+
+.tieudeLISTBS{
+	margin-top: 10px;
+}
+
+.btn_sm{
+	width: 400px;
+	margin-left: auto; 
+	margin-right: auto;
+}
+
+.btn_submit {
+	width: 100px;
+	height: 25px;
+	background: #eabe87;
+	font-style: italic;
+}

@@ -10,7 +10,7 @@
 	// echo $username ;
 	// echo $password ;
 	// echo $role ;
-	$connect = mysqli_connect("localhost", "root", "", "nhakhoa");
+	$connect = mysqli_connect("localhost", "root", "", "nhkhoaver2");
 	//$query = "SELECT * FROM users";
 
 	$query = "SELECT username, password, user_type FROM users WHERE  username = '$username' and password = '$password' ";

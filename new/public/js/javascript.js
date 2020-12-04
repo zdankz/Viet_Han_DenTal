@@ -17,7 +17,7 @@ const url2 ="../model/DTviemrang.php";
 								// temp += "<tr>"+ u.Name+"</tr>";
 								
 								
-								temp2 += "<td >"+"<a href='#'>"+ u.avata +"</a>"+"</br>"+ u.Name+"</td>";
+								temp2 += "<td >"+"<a href='#'>"+ u.avata +"</a>"+"</br>"+ u.Name+"<input type='checkbox' id='' name='bs' value='"+u.Name+"'>"+"</td>";
 								
 											
 

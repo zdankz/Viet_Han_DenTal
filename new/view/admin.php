@@ -108,7 +108,7 @@
 			</div>
 			<div class="box member">
 				<h2>Đây là danh sách Nhân Viên</h2>
-				<table class="table table-striped table-dark" width="800px">
+				<!-- <table class="table table-striped table-dark" width="800px">
 					<th>Số TT</th>
 					<th>Họ Và Tên</th>
 					<th>Ngày Sinh</th>
@@ -123,7 +123,7 @@
 			
 			
 		</tbody>
-	</table>
+	</table> -->
 			</div>
 			<div class="box doctor" >
 				<h2>Đây là danh sách Bác Sĩ</h2>
