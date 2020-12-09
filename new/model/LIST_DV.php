@@ -37,11 +37,33 @@ echo "<table>
 
 while($row = mysqli_fetch_array($data)) {
   echo "<tr>";
-  echo "<td>"."<input type='checkbox' id='checkDV' name='".$row['TenDV']."' value='".$row['time_turn']."-".$row['GiaTien']."+".$row['TenDV']."' onchange='tinh_thoigian_and_tien(this.value)'/>"."</td>";
+  echo "<td>"."<input type='checkbox' id='checkDV' name='".$row['TenDV']."' value='".$row['time_turn']."-".$row['GiaTien']."-".$row['TenDV']."' onchange='tinh_thoigian_and_tien(this.value)'/>"."</td>";
   echo "<td>" . $row['TenDV'] . "</td>";
   echo "<td>" . $row['QT_TriLieu'] . "</td>";
   echo "<td>" . $row['time_turn'] . "</td>";
   echo "<td>" . $row['GiaTien'] . "</td>";  
+  echo "</tr>";
+}
+echo "</table>";
+
+echo "<center>============LICH CUA BAC SI============</center>";
+$query = "SELECT MaBooking, ThoiGianBD, ThoiGianKT from booking_detail where MaUser = '$MaUser' ";
+
+$data = mysqli_query($connect, $query);
+echo "<table>
+<tr>
+<th>STT</th>
+<th>TimeBD</th>
+<th>TimeKT</th>
+</tr>";
+
+while($row = mysqli_fetch_array($data)) {
+  echo "<tr>";
+  // echo "<td>"."<input type='checkbox' id='checkDV' name='".$row['TenDV']."' value='".$row['time_turn']."-".$row['GiaTien']."-".$row['TenDV']."' onchange='tinh_thoigian_and_tien(this.value)'/>"."</td>";
+  // echo "<td>" . $row['TenDV'] . "</td>";
+  echo "<td>" . $row['MaBooking'] . "</td>";
+  echo "<td>" . $row['ThoiGianBD'] . "</td>";
+  echo "<td>" . $row['ThoiGianKT'] . "</td>";  
   echo "</tr>";
 }
 echo "</table>";

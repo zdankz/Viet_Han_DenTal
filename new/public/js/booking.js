@@ -79,17 +79,25 @@ function showDV(str) {
   }
   xmlhttp.open("GET","../model/LIST_DV.php?MaUser="+str,true);
   xmlhttp.send();
+
+  // xmlhttp.open("GET","../model/calenBS.php?MaUser="+str,true);
+  // xmlhttp.send();
+
 }
 
 // Hàm tính thời gian khi chon các dịch vụ
 //function tính toán có dùng cắt chuỗi value chứa 2 giá trị Thời gian + Chi Phí
 function tinh_thoigian_and_tien(str) {	
-	var time = str.split("-",1);
+	var getstr = str.split('-');
+	var time = getstr[0];
+	var tien = getstr[1];
+
+	// var time = str.split("-",1);
 	var tongTG = document.getElementById("thoi_gian").value;	
 	document.getElementById("thoi_gian").value = (tongTG) - (-time);
 
 	var chuoi = str;
-	var tien = chuoi.substring(chuoi.indexOf("-") +1);
+	// var tien = chuoi.substring(chuoi.indexOf("-") +1);
 	var tongtienHT = document.getElementById("tien_bac").value;
 	document.getElementById("tien_bac").value = (tongtienHT)-(-tien) ;
 	// 

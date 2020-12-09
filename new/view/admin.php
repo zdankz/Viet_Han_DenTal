@@ -35,7 +35,7 @@
  });
 </script>
 <script>
-		const url ="../model/adapterNV.php";
+		const url ="../model/DanhSachDK/AllBooking.php";
 		fetch(url).then(
 			res=>{
 				res.json().then(
@@ -47,17 +47,17 @@
 							data.forEach((u)=> {
 								
 								temp +="<tr>";
-								temp += "<td>"+ u.MaProfile +"</td>";
+								temp += "<td>"+ u.MaBooking +"</td>";
 									
-								temp += "<td>"+"<a href='#'>"+ u.Name+"</a>" +"</td>";
+								temp += "<td>"+ u.Name+"</td>";
 								
+								temp += "<td>"+ u.SDT +"</td>";
 								temp += "<td>"+ u.NgaySinh +"</td>";
-								temp += "<td>"+ u.GioiTinh +"</td>";
-								temp += "<td>"+ u.QueQuan +"</td>";
-								temp += "<td>"+ u.DanToc +"</td>";
-								temp += "<td>"+ u.NgayVaoLam +"</td>";
-								temp += "<td >"+ u.avata +"</td>";
-								
+								temp += "<td>"+ u.BoPhan +"</td>";
+								temp += "<td>"+ u.DichVu +"</td>";
+								temp += "<td>"+ u.MaUser +"</td>";
+								temp += "<td >"+ u.ThoiGianBD +"</td>";
+								temp += "<td >"+ u.ThoiGianKT +"</td>";
 								temp += "<td style='text-align:center'>"+"<p><a href='#'>EDIT</a></br><a href='#'>DELETE</a></p>"+"</td>";				
 
 								})
@@ -95,16 +95,34 @@
 		<div id="content">
 			<!--=============Phân Nhánh Bộ Phận==================================-->
 			<p>
-				<input class="phannhanh" type="radio" name="phansu" valua="book" checked>Danh Sách Đơn Đặt
+				<input class="phannhanh" type="radio" name="phansu" valua="book" >Danh Sách Đơn Đặt
 				<input class="phannhanh" type="radio" name="phansu" valua="duyet" >Danh Sách Duyệt
 				<input class="phannhanh" type="radio" name="phansu" valua="member" >Danh Sách Nhân Viên
 				<input class="phannhanh" type="radio" name="phansu" valua="doctor" >Danh Sách Bác Sĩ
 			</p>
 			<div class="box book">
 				<h2>Đây là danh sách đơn đăng kí từ khách hàng</h2>
+				<table class="table table-striped table-dark" width="800px">
+					<th>Số TT</th>
+					<th>Họ Và Tên</th>
+					<th>SDT</th>
+					<th>Ngày Sinh</th>
+					<th>Vấn Đề Gặp Phải</th>
+					<th>Dịch Vụ Đã Chọn</th>
+					<th>Bác Sĩ Đã Chọn</th>
+					<th>Thời Gian BD</th>
+					<th>Thời Gian KT</th>
+					<th style='text-align:center'>Settings</th>
+
+		<tbody id="data">
+			
+			
+		</tbody>
 			</div>
 			<div class="box duyet">
 				<h2>Đây là danh sách đơn đã phê duyệt</h2>
+				
+	</table>
 			</div>
 			<div class="box member">
 				<h2>Đây là danh sách Nhân Viên</h2>
@@ -127,6 +145,7 @@
 			</div>
 			<div class="box doctor" >
 				<h2>Đây là danh sách Bác Sĩ</h2>
+
 			</div>
 		</div>
 		</center>

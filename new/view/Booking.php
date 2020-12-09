@@ -15,7 +15,7 @@
 	<div class="main" >
 		<div class="content_code">
 			<center><h3>REGISTER</h3></center>
-			<form class="FORMDK" action="" method="GET">
+			<form class="FORMDK" action="../model/themBooking.php" method="GET">
 			<div class="thongtinnguoidangky" >
 				<label class="theten">Username</label><br>
 				<input class="inputthongtin" type="text" placeholder="" name="username" required><br>
@@ -32,11 +32,11 @@
 				<br>
 				<div class="checkbox"> 
 					<h3 class="Tieu_De_Div">Bạn đang gặp phải vấn đề gì?</h3>
-					<input class="theinput" id ="checkA" type="checkbox" name="vandeA" value="A" />
+					<input class="theinput" id ="checkA" type="checkbox" name="vande" value="A" />
 					<label>Vấn đề A</label><BR>
-					<input class="theinput" id ="checkB" type="checkbox" name="vandeB" value="B"/>
+					<input class="theinput" id ="checkB" type="checkbox" name="vande" value="B"/>
 					<label>Vấn đề B</label><BR>
-					<input class="theinput" id="checkC" type="checkbox" name="vandeC" value="C"/>
+					<input class="theinput" id="checkC" type="checkbox" name="vande" value="C"/>
 					<label>Vấn đề C</label><BR>
 					<!-- <input class="theinput" id="checkD" type="checkbox" name="vandeD" value="D"/> -->
 					<!-- <label>Vấn đề D</label><BR>
@@ -79,9 +79,14 @@
 				<!-- <b>Person info will be listed here.</b> -->
 			</div>
 			<div class="tinhtoan" id="tinhtoan">
+				TGBD<input type="text" name="tgbd" placeholder="vd 2020-12-30  14:30:00" required>
+
+
+				<br><br>
+				TGKT<input type="text" name="tgkt" placeholder="vd 2020-12-30  14:30:00" required>
 				<input id="thoi_gian" style="margin: 20px;" type="text" name="thoigian" value="0" size="10" disabled="" /><label id="label_thogian" name="lb_tg" value="0"></label>
 				
-				<input disabled="" id="tien_bac" style="margin: 20px;" type="text" name="tongtien" value="0" size="10" />VND
+				<br><input disabled="" id="tien_bac" style="margin: 20px;" type="text" name="tongtien" value="0" size="10" />VND
 				
 			</div>	
 			<div class="btn_sm">
