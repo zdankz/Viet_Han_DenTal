@@ -50,11 +50,21 @@
  });
 </script> -->
     <title>Booking Online</title>
-</head>
-<body style="background-color: #fff;">  
-<form action="#" method="GET" >
+    <style>
 
-<div id="content1">
+body {font-family: Verdana, sans-serif; margin:0}
+
+
+/* On smaller screens, decrease text size */
+
+</style>
+</head>
+<body style="background-color:#13050561;" >  
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <div id="content1">
   <!-- ========================FORM CHỌN VẤN ĐỀ GẶP PHẢI====================================== -->  
     <form class="FORM_VAN_DE">
       <div><h3 class="tieude">Choose your problem sites from below options</h3></div>
@@ -230,35 +240,203 @@
       </div>
     </form><!-- .===========================KẾT THÚC FORM CHỌN VẤN ĐỀ===============================. --> 
 
-</div>
-<div id="content2">
+    </div>
    
-   
-
-</div>
-
-
-
- 
-
-
-
-<!-- =====================================CONTROL============================================ -->
-<!-- <div id="right"><center><img src="../public/images/arrow_next.png" width="50" height="50" alt="arrow_next" onclick=""></center></div>
-<div id="left"><center><img src="../public/images/arrow_back.png" width="50" height="50" alt="arrow_back" onclick=""></center></div> -->
-<!-- =====================================END CONTROL============================================ -->
-<center><input style="margin-top: 5px;" type="button" onclick="CHECKED()" value="TIẾP TỤC">
-<!-- <br><br><input type="text" id="order" size="50"></center> -->
-<div class="gr_radio_box">
-  <input class="radio_box" type="radio" name="silde" checked>
-  <input class="radio_box" type="radio" name="silde" value="DIV_2">
-  <input class="radio_box" type="radio" name="silde">
-  <input class="radio_box" type="radio" name="silde">
-  <input class="radio_box" type="radio" name="silde">
-</div>
-
     
-<!-- ==========================================END BOOKING=========================================== -->
-</form>
+  </div>
+
+  <div class="mySlides fade">
+    <div id="content2">
+  <!-- ========================FORM CHỌN VẤN ĐỀ GẶP PHẢI====================================== -->  
+    <form class="FORM_VAN_DE">
+      <div><h3 class="tieude">Choose doctor from below options</h3></div>
+      <h5 class="tieude">Danh Sách Bác Sĩ Có Thể Giúp Bạn</h5>
+      <div class="thammy">
+        <div class="container2">
+          <div id="DSBS">
+            
+          </div>
+        <!-- <label class="option_item">
+          <input type="radio" id="tuvan" name="thammy" value="Tư Vấn">
+          <div class="option_inner facebook">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fas fa-user-nurse"></i></div>
+            <div class="name">Tư Vấn Răng Miệng</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" id="checkall" value="Tất Cả">
+          <div class="option_inner reddit">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fas fa-check-circle"></i></div>
+            <div class="name">Chọn Tất Cả</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Làm Trắng Răng">
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fas fa-tooth"></i></div>
+            <div class="name">Làm Trắng Răng</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox"  name="thammy" value="Trắm Răng">
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fas fa-tooth"></i></div>
+            <div class="name">Trắm Răng</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Dán Răng Sứ" >
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="name">Dán Răng Sứ</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Bọc Răng">
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="name">Bọc Răng</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Định Hình">
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="name">Định Hình</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Tạo Viền Răng" >
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="name">Tạo Viền Răng</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Niềng Răng" >
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="name">Niềng Răng</div>
+          </div>
+        </label>
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Cầu Răng" >
+          <div class="option_inner twitter">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-twitter"></i></div>
+            <div class="name">Cầu Răng</div>
+          </div>
+        </label>          
+        <label class="option_item">
+          <input type="checkbox" class="checkbox" name="thammy" value="Cấy Răng">
+          <div class="option_inner quora">
+            <div class="tickmark"></div>
+            <div class="icon"><i class="fab fa-quora"></i></div>
+            <div class="name">Cấy Răng</div>
+          </div>
+        </label> -->
+        </div>    
+      </div>
+      
+    </form><!-- .===========================KẾT THÚC FORM CHỌN VẤN ĐỀ===============================. --> 
+
+    </div>
+    
+   
+  </div>
+
+  <div class="mySlides fade">
+    
+
+  </div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<center><input style="margin-top: 5px;" type="button"  onclick="CHECKED()" value="TIẾP TỤC" >
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<script>
+    const url ="../model/dsBSfromVD.php";
+    fetch(url).then(
+      res=>{
+        res.json().then(
+          data=>{
+            console.log(data);
+            if(data.length > 0) {
+
+              var temp = "";
+              data.forEach((u)=> {
+                
+                temp +="<label class='option_item'>";
+                temp += "<input type='checkbox' value=''>";
+                  
+                temp += "<div class='option_inner reddit'>";
+                temp += "<div class='icon'><i class='fas fa-check-circle'></i></div>"
+                temp += "<div class='name' >Chọn Tất Cả</div></div></label>"
+                
+                // temp += "<td>"+ u.SDT +"</td>";
+                // temp += "<td>"+ u.NgaySinh +"</td>";
+                // temp += "<td>"+ u.BoPhan +"</td>";
+                // temp += "<td>"+ u.DichVu +"</td>";
+                // temp += "<td>"+ u.MaUser +"</td>";
+                // temp += "<td >"+ u.ThoiGianBD +"</td>";
+                // temp += "<td >"+ u.ThoiGianKT +"</td>";
+                // temp += "<td style='text-align:center'>"+"<p><a href='#'>EDIT</a></br><a href='#'>DELETE</a></p>"+"</td>";        
+
+                })
+            
+            document.getElementById("data").innerHTML = temp;
+            }
+          }
+          )
+      }
+      )
+  </script>
+
+</body>
 </body>
 </html>

@@ -1,3 +1,12 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<body>
+
 <?php 
 
 $values = $_POST;
@@ -15,21 +24,15 @@ foreach ($values as $value) {
 		
 		
 	}
-
 }
-$key1 = substr($key, 1);
-$key2 = substr($key1, 1);
+
+$key1 = substr($key,1);
+$key2 = substr($key1,1);
 echo $key2;
 
 
 
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-</head>
-<body>
 
 </body>
 </html>
